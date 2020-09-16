@@ -2,12 +2,13 @@ class View:
     def kuva_elemendid(self, elemendid):
         print("Kõik elemendid")
         for element in elemendid:
-            print("- {}".format(element))
+            print("{}".format(element))
 
     def kuva_element(self, nimetus, element):
         print(" Kuvame {} elementi andmed".format(nimetus))
+        print("--------------------")
         print(element)
-
+        print("--------------------")
     def lisa_element(self, nimetus, hind, kogus):
         print("Elemendi lisamine")
         print("Lisatud {} hinnaga {}EUR koguses {}".format(nimetus, hind, kogus))
@@ -22,3 +23,7 @@ class View:
     def kustuta_element(self, nimetus):
         print("Elemendi {} kustutamine".format(nimetus))
         print("Element {} on kustutatud elementide nimekirjast".format(nimetus))
+
+    def kustuta_elemendid(self):
+        print("Kõikide elementide kustutamine!".format())
+        print("Elemendid on kustutatud elementide nimekirjast")
